@@ -30,6 +30,13 @@
 
 @btn-default-bg:                 darken(@ui-toolbar, 20%);
 
+// Dropdowns
+// -------------------------
+
+@dropdown-border:                rgba(0,0,0,.35);
+@dropdown-link-active-bg:        @ui-header;
+@dropdown-link-hover-bg:         @dropdown-link-active-bg;
+
 // Thumbnails
 // -------------------------
 @thumbnail-bg:                #eee;
@@ -203,6 +210,29 @@ img {
 				color: @white;
 
 			}
+		}
+
+		.reveal {
+			.transition (all 0.35s ease);
+			visibility: hidden;
+			.opacity (0);
+		}
+		&:hover .reveal {
+			visibility: visible;
+			.opacity (1);
+		}
+	}
+}
+.list-group-files {
+	.list-group-item {
+		.list-group-object {
+			width: 6%;
+			img {
+				height: 16px;
+			}
+		}
+		.list-group-body {
+			width: 94%;
 		}
 	}
 }

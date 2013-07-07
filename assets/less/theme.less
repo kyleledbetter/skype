@@ -1,0 +1,242 @@
+//
+// Theme
+// --------------------------------------------------
+
+// Layout Colors
+// -------------------------
+
+@ui-header:          #00ABEE;
+@ui-sidebar:         #D8E9ED;
+@ui-toolbar:         #E1E1E1;
+@white:         #FFFFFF;
+
+// Brand colors
+// -------------------------
+
+@brand-primary:         #428bca;
+@brand-success:         #2ecc71;
+@brand-warning:         #f39c12;
+@brand-danger:          #e74c3c;
+@brand-info:            #3498db;
+
+// Scaffolding
+// -------------------------
+
+@body-bg:               #D7DDE9;
+@text-color:            @gray;
+
+// Buttons
+// -------------------------
+
+@btn-default-bg:                 darken(@ui-toolbar, 20%);
+
+// Thumbnails
+// -------------------------
+@thumbnail-bg:                #eee;
+
+// Layout
+// -------------------------
+// For desktops
+body {
+	padding-top: 3%;
+}
+img {
+	max-width: 100%;
+}
+.logo {
+	text-shadow: -2px 0px 2px rgba(0, 0, 0, 0.1);
+	margin-left: 10%;
+}
+.text-small {
+	font-size: 80%;
+}
+.row {
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.btn-round, .btn-round:hover,
+.btn-group > .btn-round:first-child:not(:last-child):not(.dropdown-toggle) {
+	border-radius: 99%;
+}
+.btn-mini {
+  padding: 2px 4px;
+  font-size: 11px;
+  line-height: 1.1; // ensure proper height of button next to small input
+  border-radius: @border-radius-small;
+}
+.panel.ui {
+	padding-bottom: 0;
+	border-right: 1px solid darken(@body-bg, 10%);
+	border-bottom: 1px solid darken(@body-bg, 10%);
+	border-left: 1px solid darken(@body-bg, 10%);
+	.box-shadow (10px 10px 0 rgba(0, 0, 0, 0.1));
+}
+.ui-header {
+	background-color: @ui-header;
+	border-bottom: 1px solid darken(@ui-header, 10%);
+	color: @white;
+
+	&.navbar {
+		border-bottom-right-radius: 0;
+		border-bottom-left-radius: 0;
+		margin-bottom: 0;
+
+		a {
+			.transition (all 0.5 ease-in-out);
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	.navbar-form {
+		margin-top: 0;
+		margin-bottom: 0;
+		.input-small {
+			min-height: 12px;
+			line-height: 12px;
+			border-radius: 15px;
+			padding-left: 0;
+			border: 1px solid darken(@ui-header, 10%);
+		}
+	}
+}
+.ui-sidebar {
+	background-color: @ui-sidebar;
+	border-bottom-left-radius: @border-radius-base;
+	border-right: 1px solid darken(@ui-sidebar, 20%);
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 600px;
+	.nav {
+
+		&> li > a {
+			margin-left: -15px;
+			margin-right: -15px;
+			color: darken(@ui-sidebar, 50%);
+			padding-top: 5px;
+			padding-bottom: 5px;
+				.clearfix();
+
+
+			&> img {
+				width: auto;
+				height: 15px;
+				vertical-align: baseline;
+				float: left;
+				margin-right: 5px;
+				border-radius: 20px;
+				.translate (0, 2px);
+			}
+			&> img.avatar-lg {
+				height: 32px;
+				margin-bottom: 5px;
+			}
+		}
+		&> li.active > a {
+			background-color: @ui-header;
+			color: @white;
+		}
+		&> li.nav-header {
+			padding-left: 0;
+			color: darken(@ui-sidebar, 35%);
+		}
+	}
+}
+.ui-toolbar {
+	background-color: @ui-toolbar;
+	padding: 10px;
+
+	&.ui-toolbar-top {
+		border-bottom: 1px solid darken(@ui-toolbar, 10%);
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	&.ui-toolbar-bottom {
+		border-top: 1px solid darken(@ui-toolbar, 10%);
+		border-bottom-right-radius: @border-radius-base;
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+}
+.ui-content {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	margin-left: -15px;
+	margin-right: -15px;
+	height: 445px;
+	.box-shadow (inset -3 0 10px @white);
+
+	&> .list-group {
+		margin-top: 0px;
+	}
+}
+.list-group-item {
+	.clearfix();
+
+	.list-group-object {
+		width: 10%;
+		float: left;
+
+		img {
+			width: auto;
+			height: 32px;
+			vertical-align: baseline;
+			border-radius: 40px;
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+	}
+	.list-group-body {
+		width: 90%;
+		float: left;
+
+		.panel {
+			margin-top: 5px;
+
+			.panel-object {
+				height: 75px;
+				line-height: 1.2;
+				padding: 2px;
+				overflow: hidden;
+				text-align: center;
+				background-color: #333;
+				color: @white;
+
+			}
+		}
+	}
+}
+.panel-small {
+	padding: 4px;
+	.panel-footer {
+		padding: 2px;
+		margin: 4px -4px -4px;
+	}
+}
+.modal-backdrop {
+	.opacity (0.7);
+	background-color: darken(@ui-header, 10%);
+}
+.modal-content {
+	.box-shadow (10px 10px 0 rgba(0, 0, 0, 0.1));
+	table {
+		img {
+			max-width: 24px;
+			height: auto;
+		}
+		code {
+			display: block;
+		}
+	}
+}
+.blur-on {
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+	position: relative;
+}
+.collapse-gradient {
+	#gradient > .vertical(#082B4F, #A473FB);
+}

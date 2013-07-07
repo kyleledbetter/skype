@@ -1,0 +1,823 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bootstrap Skype by Kyle Ledbetter</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/application.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+  <body>
+    <!-- Page content of course! -->
+    <div class="container">
+      <div class="col col-lg-8 col-offset-2">
+        <div class="panel ui">
+          <div class="panel-heading navbar text-center ui-header">
+            <div class="btn-group pull-left">
+              <a href="#" class="text-danger has-tooltip" title="Close"><span aria-hidden="true" class="icon-circle"></span></a>
+              <a href="#" class="text-warning has-tooltip" title="Minimize"><span aria-hidden="true" class="icon-circle"></span></a>
+              <a href="#" class="text-success has-tooltip" title="Maximize"><span aria-hidden="true" class="icon-circle"></span></a>
+            </div>
+            <form class="pull-right navbar-form">
+              <input class="input-small" type="search" results="5" name="s">
+            </form>
+            <span class="logo">
+                <span aria-hidden="true" class="icon-skype"></span> Skype
+            </span>
+          </div>
+          <div class="row">
+            <div class="col-3 ui-sidebar">
+              <ul class="nav nav-stacked">
+                <li><a href="#" class="toggle-sidebar"><span aria-hidden="true" class="icon-reorder"></span></a></li>
+                <li><a href=".collapse-user" data-toggle="collapse"><img src="assets/images/michael_128.jpg" /> <span class="sidebar-label">Michael Bluth</span></a></li>
+                <li class="collapse fade collapse-user"><a href="#"><span aria-hidden="true" class="icon-edit"></span> <span class="sidebar-label">Edit Account</span></a></li>
+                <li class="collapse fade collapse-user"><a href="#"><span aria-hidden="true" class="icon-signout"></span> <span class="sidebar-label">Sign Out</span></a></li>
+                <li><a href="#"><span aria-hidden="true" class="icon-book"></span> <span class="sidebar-label">Contacts</span></a></li>
+                <li><a href="#"><span aria-hidden="true" class="icon-cloud-download"></span> <span class="sidebar-label">Files</span></a></li>
+                <li><a href="#"><span aria-hidden="true" class="icon-link"></span> <span class="sidebar-label">Links</span></a></li>
+                <li><a href="#"><span aria-hidden="true" class="icon-time"></span> <span class="sidebar-label">History</span></a></li>
+                <li class="nav-header"><span class="sidebar-label">Chat Rooms</span></li>
+                <li class="active"><a href="#"><span aria-hidden="true" class="icon-group"></span> <span class="sidebar-label">The &quot;Family&quot;</span></a></li>
+                <li><a href="#"><span aria-hidden="true" class="icon-group"></span> <span class="sidebar-label">Gob &amp; Franklin</span></a></li>
+                <li class="nav-header"><span class="sidebar-label">Favorites</span></li>
+                <li><a href="#"><img src="assets/images/george-michael_128.jpg" /> <span class="sidebar-label">George-Michael</span></a></li>
+                <li><a href="#"><img src="assets/images/george_128.jpg" /> <span class="sidebar-label">George Bluth Sr.</span></a></li>
+                <li><a href="#"><img src="assets/images/lucille_128.jpg" /> <span class="sidebar-label">Lucille Bluth</span></a></li>
+                <li class="nav-header"><span class="sidebar-label">Recent</span></li>
+                <li><a href="#"><img src="assets/images/gob_128.jpg" /> <span class="sidebar-label">Gob Bluth</span></a></li>
+                <li><a href="#"><img src="assets/images/tobias_128.jpg" /> <span class="sidebar-label">Tobias Fünke</span></a></li>
+                <li><a href="#"><img src="assets/images/maeby_128.jpg" /> <span class="sidebar-label">Maeby Fünke</span></a></li>
+                <li><a href="#"><img src="assets/images/buster_128.jpg" /> <span class="sidebar-label">Buster Bluth</span></a></li>
+                <li><a href="#"><img src="assets/images/barry_128.jpg" /> <span class="sidebar-label">Barry Zuckerkorn</span></a></li>
+              </ul>
+            </div>
+            <div class="col-9 ui-mainbody">
+              <div class="ui-toolbar ui-toolbar-top clearfix">
+                <div class="btn-toolbar pull-left">
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-round btn-default btn-small has-tooltip" data-toggle="tooltip" title="Share Screen"><span aria-hidden="true" class="icon-laptop"></span></a>
+                  </div>
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-round btn-default btn-small has-tooltip" data-toggle="tooltip" title="Share File"><span aria-hidden="true" class="icon-cloud-upload"></span></a>
+                  </div>
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-round btn-default btn-small has-tooltip" data-toggle="tooltip" title="Share Contact"><span aria-hidden="true" class="icon-user"></span></a>
+                  </div>
+                </div>
+                <div class="btn-toolbar pull-right">
+                  <div class="btn-group">
+                    <a href="#collapse-video" data-toggle="collapse" class="btn btn-round btn-success btn-small has-tooltip" data-toggle="tooltip" title="Video Call"><span aria-hidden="true" class="icon-facetime-video"></span></a>
+                  </div>
+                  <div class="btn-group">
+                    <a href="#collapse-call" data-toggle="collapse" class="btn btn-round btn-success btn-small has-tooltip" data-toggle="tooltip" title="Voice Call"><span aria-hidden="true" class="icon-phone"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-content">
+                <div id="collapse-call" class="collapse collapse-gradient fade">
+                  <img src="assets/images/george_128.jpg" class="blur-on" width="25%"/><img src="assets/images/maybe_128.jpg" class="blur-on" width="25%"/><img src="assets/images/lucille_128.jpg" class="blur-on" width="25%"/><img src="assets/images/buster_128.jpg" width="25%"/><img src="assets/images/gob_128.jpg" class="blur-on" width="25%"/><img src="assets/images/michael_128.jpg" width="25%"/><img src="assets/images/barry_128.jpg" class="blur-on" width="25%"/><img src="assets/images/george-michael_128.jpg" class="blur-on" width="25%"/>
+                  <div class="ui-toolbar">
+                    <div class="btn-toolbar pull-right">
+                      <div class="btn-group">
+                        <a href="#" class="btn btn-default btn-mini active">
+                          <span class="timer"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="btn-toolbar">
+                      <div class="btn-group" data-toggle="buttons-radio">
+                        <label class="btn btn-default btn-mini has-tooltip" title="Microphone Off">
+                          <input type="radio"> <span aria-hidden="true" class="icon-microphone-off"></span>
+                        </label>
+                        <label class="btn btn-default btn-mini has-tooltip active" title="Microphone On">
+                          <input type="radio"> <span aria-hidden="true" class="icon-microphone"></span>
+                        </label>
+                      </div>
+                      <div class="btn-group" data-toggle="buttons-radio">
+                        <label class="btn btn-default btn-mini has-tooltip" title="Speaker Off">
+                          <input type="radio"> <span aria-hidden="true" class="icon-volume-off"></span>
+                        </label>
+                        <label class="btn btn-default btn-mini has-tooltip active" title="Speaker On">
+                          <input type="radio"> <span aria-hidden="true" class="icon-volume-up"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="collapse-video" class="collapse collapse-gradient fade">
+                  <div class="text-center">
+                    <img src="assets/images/animated/lucille-animation.gif" width="100%"/>
+                  </div>
+                  <img src="assets/images/animated/franklin.gif" width="20%"/><img src="assets/images/animated/mayonegg.gif" width="20%"/><img src="assets/images/animated/nonono.gif" width="20%"/><img src="assets/images/animated/rita_corny.gif" width="20%"/><img src="assets/images/animated/up_here.gif" width="20%"/>
+                  <div class="ui-toolbar">
+                    <div class="btn-toolbar pull-right">
+                      <div class="btn-group">
+                        <a href="#" class="btn btn-default btn-mini active">
+                          <span class="timer"></span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="btn-toolbar">
+                      <div class="btn-group" data-toggle="buttons-radio">
+                        <label class="btn btn-default btn-mini has-tooltip" title="Microphone Off">
+                          <input type="radio"> <span aria-hidden="true" class="icon-microphone-off"></span>
+                        </label>
+                        <label class="btn btn-default btn-mini has-tooltip active" title="Microphone On">
+                          <input type="radio"> <span aria-hidden="true" class="icon-microphone"></span>
+                        </label>
+                      </div>
+                      <div class="btn-group" data-toggle="buttons-radio">
+                        <label class="btn btn-default btn-mini has-tooltip" title="Speaker Off">
+                          <input type="radio"> <span aria-hidden="true" class="icon-volume-off"></span>
+                        </label>
+                        <label class="btn btn-default btn-mini has-tooltip active" title="Speaker On">
+                          <input type="radio"> <span aria-hidden="true" class="icon-volume-up"></span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group list-group-flush">
+                  <div class="list-group-item text-muted text-center">
+                    May 10, 2013
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/maybe_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <small class="text-muted pull-right">3:15 PM</small>
+                      <h5 class="list-group-item-heading">Maeby Fünke</h5>
+                      <p class="list-group-item-text">Do you guys know where I can get one of those gold necklaces with a “T” on it?</p>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/michael_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <small class="text-muted pull-right">3:15 PM</small>
+                      <h5 class="list-group-item-heading">Michael Bluthe</h5>
+                      <p class="list-group-item-text">That’s a cross.</p>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/maybe_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <small class="text-muted pull-right">3:15 PM</small>
+                      <h5 class="list-group-item-heading">Maeby Fünke</h5>
+                      <p class="list-group-item-text">Across from where?</p>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/michael_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <small class="text-muted pull-right">3:15 PM</small>
+                      <h5 class="list-group-item-heading">Michael Bluthe</h5>
+                      <p class="list-group-item-text">Shared 3 files:
+                      </p>
+                      <div class="clearfix">
+                        <div class="col-4">
+                          <div class="panel panel-small">
+                            <div class="panel-object">
+                              <img src="assets/images/michael-maeby.jpg" />
+                            </div>
+                            <div class="panel-footer">
+                              <a href="#" class="btn btn-default btn-mini btn-block"><span aria-hidden="true" class="icon-download-alt"></span> Download</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="panel panel-small">
+                            <div class="panel-object">
+                              <div aria-hidden="true" class="icon-file-text h1"></div>
+                              <div class="text-small">
+                                sudden-valley-plans.doc
+                              </div>
+                            </div>
+                            <div class="panel-footer">
+                              <a href="#" class="btn btn-default btn-mini btn-block"><span aria-hidden="true" class="icon-download-alt"></span> Download</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="panel panel-small">
+                            <div class="panel-object">
+                              <iframe width="100%" height="71" src="//www.youtube.com/embed/4W23NIyNbnM?showinfo=0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="panel-footer">
+                              <a href="#" class="btn btn-default btn-mini btn-block"><span aria-hidden="true" class="icon-download-alt"></span> Download</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item text-muted text-center">
+                    May 11, 2013
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/lindsay_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <small class="text-muted pull-right">3:15 PM</small>
+                      <h5 class="list-group-item-heading">Lindsay Bluthe</h5>
+                      <p class="list-group-item-text">I care deeply for nature.</p>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/michael_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <small class="text-muted pull-right">3:15 PM</small>
+                      <h5 class="list-group-item-heading">Michael Bluthe</h5>
+                      <p class="list-group-item-text">You’re wearing ostrich-skin boots.</p>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/lindsay_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <small class="text-muted pull-right">3:15 PM</small>
+                      <h5 class="list-group-item-heading">Lindsay Bluthe</h5>
+                      <p class="list-group-item-text">Well, I don’t care about ostriches.</p>
+                    </div>
+                  </div>
+                  <div class="list-group-item text-muted text-center">
+                    May 12, 2013
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/michael_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <small class="text-muted pull-right">3:15 PM</small>
+                      <h5 class="list-group-item-heading">Michael Bluthe</h5>
+                      <p class="list-group-item-text">Can’t a guy call his mother pretty without it seeming strange?</p>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/michael_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <small class="text-muted pull-right">3:15 PM</small>
+                      <h5 class="list-group-item-heading">Buster Bluthe</h5>
+                      <p class="list-group-item-text">Amen. And how about that little piece of tail on her? Cute!</p>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/michael_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <small class="text-muted pull-right">3:15 PM</small>
+                      <h5 class="list-group-item-heading">Michael Bluthe</h5>
+                      <p class="list-group-item-text">I’ve opened a door here that I regret.</p>
+                    </div>
+                  </div>
+                  <div class="list-group-item text-muted text-center">
+                    May 13, 2013
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/tobias_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <small class="text-muted pull-right">3:15 PM</small>
+                      <h5 class="list-group-item-heading">Tobias Fünke</h5>
+                      <p class="list-group-item-text">Well, Michael, you really are quite the Cupid, aren’t you? I tell you, you can sink your arrow into my buttocks any time.</p>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/michael_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <small class="text-muted pull-right">3:15 PM</small>
+                      <h5 class="list-group-item-heading">Michael Bluthe</h5>
+                      <p class="list-group-item-text">Okay, you know what you do? You buy yourself a tape recorder, you just record yourself for a whole day. I think you’re going to be surprised at some of your phrasing.</p>
+                    </div>
+                  </div>
+                  <div class="list-group-item text-muted text-center">
+                    May 14, 2013
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/tobias_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <small class="text-muted pull-right">3:15 PM</small>
+                      <h5 class="list-group-item-heading">Tobias Fünke</h5>
+                      <p class="list-group-item-text">Well, Michael, you really are quite the Cupid, aren’t you? I tell you, you can sink your arrow into my buttocks any time.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-toolbar ui-toolbar-bottom clearfix">
+                <p class="text-small text-muted pull-right">Skype supports <a data-toggle="modal" href="#modal-emoticons">emoticons</a> &amp; <a data-toggle="modal" href="#modal-markdown">markdown</a></p>
+                <a href="#" class="btn btn-mini btn-default">Preview</a>
+                <textarea></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/application.js"></script>
+    <!-- Emoticons Modal -->
+      <div class="modal fade" id="modal-emoticons">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Emoticons</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table table-bordered table-condensed table-striped text-center text-small">
+                <thead>
+                  <tr>
+                    <th colspan="6">Emoticon &amp; Code</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="assets/images/emoticons/angel@2x.png" />
+                      <code>(angel)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/angry@2x.png" />
+                      <code>(angry)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/bandit@2x.png" />
+                      <code>(bandit)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/beer@2x.png" />
+                      <code>(beer)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/bigsmile@2x.png" />
+                      <code>(:D)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/blushing@2x.png" />
+                      <code>(blush)</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="assets/images/emoticons/bow@2x.png" />
+                      <code>(bow)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/brokenheart@2x.png" />
+                      <code>(brokenheart)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/bug@2x.png" />
+                      <code>(bug)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/cake@2x.png" />
+                      <code>(cake)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/call@2x.png" />
+                      <code>(call)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/cash@2x.png" />
+                      <code>(cash)</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="assets/images/emoticons/clapping@2x.png" />
+                      <code>(clap)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/coffee@2x.png" />
+                      <code>(coffee)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/cool@2x.png" />
+                      <code>(cool)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/crying@2x.png" />
+                      <code>(cry)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/dancing@2x.png" />
+                      <code>(dance)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/devil@2x.png" />
+                      <code>(devil)</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="assets/images/emoticons/doh@2x.png" />
+                      <code>(doh)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/drunk@2x.png" />
+                      <code>(drunk)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/dull@2x.png" />
+                      <code>(|-())</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/emo@2x.png" />
+                      <code>(emo)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/envy@2x.png" />
+                      <code>(envy)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/evilgrin@2x.png" />
+                      <code>(evil)</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="assets/images/emoticons/facepalm@2x.png" />
+                      <code>(facepalm)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/finger@2x.png" />
+                      <code>(finger)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/fingerscrossed@2x.png" />
+                      <code>(yn)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/flower@2x.png" />
+                      <code>(flower)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/fubar@2x.png" />
+                      <code>(fubar)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/giggle@2x.png" />
+                      <code>(chuckle)</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="assets/images/emoticons/handshake@2x.png" />
+                      <code>(handshake)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/happy@2x.png" />
+                      <code>(:))</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/headbang@2x.png" />
+                      <code>(headbang)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/heart@2x.png" />
+                      <code>(heart)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/heidy@2x.png" />
+                      <code>(heidy)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/hi@2x.png" />
+                      <code>(wave)</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="assets/images/emoticons/highfive@2x.png" />
+                      <code>(highfive)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/hollest@2x.png" />
+                      <code>(hollest)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/hug@2x.png" />
+                      <code>(hug)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/inlove@2x.png" />
+                      <code>(love)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/itwasntme@2x.png" />
+                      <code>(itwasntme)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/kiss@2x.png" />
+                      <code>(kiss)</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="assets/images/emoticons/lalala@2x.png" />
+                      <code>(lalala)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/lipssealed@2x.png" />
+                      <code>(:X)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/makeup@2x.png" />
+                      <code>(makeup)</code>
+                    </td>
+                    <td class="warning">
+                      <img src="assets/images/emoticons/malthe@2x.png" />
+                      <code>(malthe)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/mmm@2x.png" />
+                      <code>(mmm)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/mooning@2x.png" />
+                      <code>(mooning)</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="assets/images/emoticons/muscle@2x.png" />
+                      <code>(flex)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/music@2x.png" />
+                      <code>(music)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/nerd@2x.png" />
+                      <code>(nerd)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/ninja@2x.png" />
+                      <code>(ninja)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/no@2x.png" />
+                      <code>(n)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/nod@2x.png" />
+                      <code>(nod)</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="assets/images/emoticons/oliver@2x.png" />
+                      <code>(oliver)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/party@2x.png" />
+                      <code>(party)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/phone@2x.png" />
+                      <code>(phone)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/pizza@2x.png" />
+                      <code>(pizza)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/poolparty@2x.png" />
+                      <code>(poolparty)</code>
+                    </td>
+                    <td class="warning">
+                      <img src="assets/images/emoticons/priidu@2x.png" />
+                      <code>(priidu)</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="assets/images/emoticons/puking@2x.png" />
+                      <code>(puke)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/punch@2x.png" />
+                      <code>(punch)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/rock@2x.png" />
+                      <code>(rock)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/rofl@2x.png" />
+                      <code>(rofl)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/sadsmile@2x.png" />
+                      <code>(:()</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/shake@2x.png" />
+                      <code>(shake)</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="assets/images/emoticons/sleepy@2x.png" />
+                      <code>(sleepy)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/smile@2x.png" />
+                      <code>(:))</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/smirk@2x.png" />
+                      <code>(;))</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/smoking@2x.png" />
+                      <code>(smoking)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/speechless@2x.png" />
+                      <code>(:|)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/sunshine@2x.png" />
+                      <code>(sun)</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="assets/images/emoticons/surprised@2x.png" />
+                      <code>(:O)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/swear@2x.png" />
+                      <code>(swear)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/sweating@2x.png" />
+                      <code>((:|)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/talking@2x.png" />
+                      <code>(talk)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/thinking@2x.png" />
+                      <code>(think)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/time@2x.png" />
+                      <code>(time)</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="assets/images/emoticons/tmi@2x.png" />
+                      <code>(tmi)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/toivo@2x.png" />
+                      <code>(toivo)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/tongueout@2x.png" />
+                      <code>(:P)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/tumbleweed@2x.png" />
+                      <code>(tumbleweed)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/wait@2x.png" />
+                      <code>(wait)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/waiting@2x.png" />
+                      <code>(waiting)</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="assets/images/emoticons/wfh@2x.png" />
+                      <code>(wfh)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/whew@2x.png" />
+                      <code>(whew)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/wink@2x.png" />
+                      <code>(;))</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/wondering@2x.png" />
+                      <code>(:^))</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/worried@2x.png" />
+                      <code>(:S)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/wtf@2x.png" />
+                      <code>(wtf)</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="assets/images/emoticons/yawning@2x.png" />
+                      <code>(yawn)</code>
+                    </td>
+                    <td>
+                      <img src="assets/images/emoticons/yes@2x.png" />
+                      <code>(y)</code>
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Markdown Modal -->
+        <div class="modal fade" id="modal-markdown">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Markdown</h4>
+              </div>
+              <div class="modal-body">
+                <pre>
+                  <code>
+# This is an H1
+### This is an H3
+
+> This is a blockquote
+
+- list item
+- list item
+- list item
+
+1. one
+2. two
+3. three
+
+*strong*
+**emphasized**
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+        </div>
+  </body>
+</html>

@@ -4459,3 +4459,20 @@ img {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff082b4f', endColorstr='#ff333333', GradientType=0);
 }
+.well-upload {
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+.iframe-preview {
+  -moz-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+  -o-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  -moz-transform-origin: top left;
+  -webkit-transform-origin: top left;
+  -o-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+  height: 320px;
+}

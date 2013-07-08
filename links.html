@@ -1,0 +1,573 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bootstrap Skype by Kyle Ledbetter</title>
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/application.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond/respond.min.js"></script>
+    <![endif]-->
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+  <body>
+    <!-- Page content of course! -->
+    <div class="container">
+      <div class="col col-lg-8 col-offset-2">
+        <div class="panel ui">
+          <div class="panel-heading navbar text-center ui-header">
+            <div class="btn-group pull-left">
+              <a href="#" class="text-danger has-tooltip" title="Close"><span aria-hidden="true" class="icon-circle"></span></a>
+              <a href="#" class="text-warning has-tooltip" title="Minimize"><span aria-hidden="true" class="icon-circle"></span></a>
+              <a href="#" class="text-success has-tooltip" title="Maximize"><span aria-hidden="true" class="icon-circle"></span></a>
+            </div>
+            <form class="pull-right navbar-form">
+              <input class="input-small" type="search" results="5" name="s">
+            </form>
+            <span class="logo">
+                <span aria-hidden="true" class="icon-skype"></span> Skype
+            </span>
+          </div>
+          <div class="row">
+            <div class="col-3 ui-sidebar">
+              <ul class="nav nav-stacked">
+                <li><a href="#" class="toggle-sidebar"><span aria-hidden="true" class="icon-reorder"></span></a></li>
+                <li><a href=".collapse-user" data-toggle="collapse"><img src="assets/images/michael_128.jpg" /> <span class="sidebar-label">Michael Bluth</span></a></li>
+                <li class="collapse fade collapse-user"><a href="#"><span aria-hidden="true" class="icon-edit"></span> <span class="sidebar-label">Edit Account</span></a></li>
+                <li class="collapse fade collapse-user"><a href="#"><span aria-hidden="true" class="icon-signout"></span> <span class="sidebar-label">Sign Out</span></a></li>
+                <li><a href="#"><span aria-hidden="true" class="icon-book"></span> <span class="sidebar-label">Contacts</span></a></li>
+                <li><a href="files.html"><span aria-hidden="true" class="icon-cloud-download"></span> <span class="sidebar-label">Files</span></a></li>
+                <li class="active"><a href="links.html"><span aria-hidden="true" class="icon-link"></span> <span class="sidebar-label">Links</span></a></li>
+                <li><a href="#"><span aria-hidden="true" class="icon-time"></span> <span class="sidebar-label">History</span></a></li>
+                <li class="nav-header"><span class="sidebar-label">Chat Rooms</span></li>
+                <li><a href="index.html"><span aria-hidden="true" class="icon-group"></span> <span class="sidebar-label">The &quot;Family&quot;</span></a></li>
+                <li><a href="#"><span aria-hidden="true" class="icon-group"></span> <span class="sidebar-label">Gob &amp; Franklin</span></a></li>
+                <li class="nav-header"><span class="sidebar-label">Favorites</span></li>
+                <li><a href="#"><img src="assets/images/george-michael_128.jpg" /> <span class="sidebar-label">George-Michael</span></a></li>
+                <li><a href="#"><img src="assets/images/george_128.jpg" /> <span class="sidebar-label">George Bluth Sr.</span></a></li>
+                <li><a href="#"><img src="assets/images/lucille_128.jpg" /> <span class="sidebar-label">Lucille Bluth</span></a></li>
+                <li class="nav-header"><span class="sidebar-label">Recent</span></li>
+                <li><a href="#"><img src="assets/images/gob_128.jpg" /> <span class="sidebar-label">Gob Bluth</span></a></li>
+                <li><a href="#"><img src="assets/images/tobias_128.jpg" /> <span class="sidebar-label">Tobias Fünke</span></a></li>
+                <li><a href="#"><img src="assets/images/maeby_128.jpg" /> <span class="sidebar-label">Maeby Fünke</span></a></li>
+                <li><a href="#"><img src="assets/images/buster_128.jpg" /> <span class="sidebar-label">Buster Bluth</span></a></li>
+                <li><a href="#"><img src="assets/images/barry_128.jpg" /> <span class="sidebar-label">Barry Zuckerkorn</span></a></li>
+              </ul>
+            </div>
+            <div class="col-9 ui-mainbody">
+              <div class="ui-toolbar ui-toolbar-top clearfix">
+                <div class="btn-toolbar pull-left">
+                  <div class="btn-group" data-toggle="buttons-radio">
+                    <label class="btn btn-default btn-small active has-tooltip" title="List View">
+                      <input type="radio" name="options" id="option1"> <span aria-hidden="true" class="icon-th-list"></span>
+                    </label>
+                    <label class="btn btn-default btn-small has-tooltip" title="Preview Mode">
+                      <input type="radio" name="options" id="option2"> <span aria-hidden="true" class="icon-laptop"></span>
+                    </label>
+                  </div>
+                </div>
+                <div class="btn-toolbar pull-right">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-small dropdown-toggle" data-toggle="dropdown">
+                        Contact <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu text-small">
+                        <li><a href="#">Barry Zuckerhorn</a></li>
+                        <li><a href="#">Buster Bluth</a></li>
+                        <li><a href="#">George-Michael</a></li>
+                        <li><a href="#">George Bluth Sr.</a></li>
+                        <li><a href="#">Gob Bluth</a></li>
+                        <li><a href="#">Lindsay Bluth</a></li>
+                        <li><a href="#">Lucille Bluth</a></li>
+                        <li><a href="#">Maeby Fünke</a></li>
+                        <li><a href="#">Tobias Fünke</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">All Contacts</a></li>
+                      </ul>
+                  </div>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-small dropdown-toggle" data-toggle="dropdown">
+                        Room <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu text-small">
+                        <li><a href="#">The &quot;Family&quot;</a></li>
+                        <li><a href="#">Gob &amp; Franklink</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">All Rooms</a></li>
+                      </ul>
+                  </div>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-small dropdown-toggle" data-toggle="dropdown">
+                        Order <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu pull-right text-small">
+                        <li><a href="#">Date</a></li>
+                        <li><a href="#">Title</a></li>
+                        <li><a href="#">User</a></li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-content">
+                <div class="list-group list-group-flush list-group-files">
+                  <div class="list-group-item text-muted text-center">
+                    May 10, 2013
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/maybe_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <div class="btn-toolbar pull-right">
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Download">
+                            <span aria-hidden="true" class="icon-download-alt"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Open in Finder">
+                            <span aria-hidden="true" class="icon-folder-open"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#collapse-frame-1" data-toggle="collapse" class="btn btn-default btn-mini" title="Preview">
+                            <span aria-hidden="true" class="icon-zoom-in"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini dropdown-toggle" data-toggle="dropdown" title="Share">
+                            <span aria-hidden="true" class="icon-share"></span>
+                          </a>
+                          <ul class="dropdown-menu pull-right text-small">
+                              <li><a href="#">Email</a></li>
+                              <li><a href="#">Share on Twitter</a></li>
+                              <li><a href="#">Share on Facebook</a></li>
+                              <li><a href="#">Copy URL</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                          <small class="text-muted pull-right">3:15 PM</small>
+                        </div>
+                      </div>
+                      <a href="http://kyleledbetter.com/" target="_blank" class="list-group-item-heading">kyleledbetter.com</a>
+                      <div id="collapse-frame-1" class="collapse fade">
+                        <a href="#collapse-frame-1" class="close" data-toggle="collapse">&times;</a>
+                        <div class="iframe-preview">
+                          <iframe width="1000" height="600" src="http://kyleledbetter.com" frameborder="0"></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/michael_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <div class="btn-toolbar pull-right">
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Download">
+                            <span aria-hidden="true" class="icon-download-alt"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Open in Finder">
+                            <span aria-hidden="true" class="icon-folder-open"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Preview">
+                            <span aria-hidden="true" class="icon-zoom-in"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini dropdown-toggle" data-toggle="dropdown" title="Share">
+                            <span aria-hidden="true" class="icon-share"></span>
+                          </a>
+                          <ul class="dropdown-menu pull-right text-small">
+                              <li><a href="#">Email</a></li>
+                              <li><a href="#">Share on Twitter</a></li>
+                              <li><a href="#">Share on Facebook</a></li>
+                              <li><a href="#">Copy URL</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                          <small class="text-muted pull-right">4:32 PM</small>
+                        </div>
+                      </div>
+                      <a href="http://dribbble.com/kyleledbetter" class="list-group-item-heading">dribbble.com/kyleledbetter</a>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/maybe_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <div class="btn-toolbar pull-right">
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Download">
+                            <span aria-hidden="true" class="icon-download-alt"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Open in Finder">
+                            <span aria-hidden="true" class="icon-folder-open"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Preview">
+                            <span aria-hidden="true" class="icon-zoom-in"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini dropdown-toggle" data-toggle="dropdown" title="Share">
+                            <span aria-hidden="true" class="icon-share"></span>
+                          </a>
+                          <ul class="dropdown-menu pull-right text-small">
+                              <li><a href="#">Email</a></li>
+                              <li><a href="#">Share on Twitter</a></li>
+                              <li><a href="#">Share on Facebook</a></li>
+                              <li><a href="#">Copy URL</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                          <small class="text-muted pull-right">10:29 PM</small>
+                        </div>
+                      </div>
+                      <a href="http://twitter.com/kyleledbetter" class="list-group-item-heading">twitter.com/kyleledbetter</a>
+                    </div>
+                  </div>
+                  <div class="list-group-item text-muted text-center">
+                    May 11, 2013
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/gob_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <div class="btn-toolbar pull-right">
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Download">
+                            <span aria-hidden="true" class="icon-download-alt"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Open in Finder">
+                            <span aria-hidden="true" class="icon-folder-open"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Preview">
+                            <span aria-hidden="true" class="icon-zoom-in"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini dropdown-toggle" data-toggle="dropdown" title="Share">
+                            <span aria-hidden="true" class="icon-share"></span>
+                          </a>
+                          <ul class="dropdown-menu pull-right text-small">
+                              <li><a href="#">Email</a></li>
+                              <li><a href="#">Share on Twitter</a></li>
+                              <li><a href="#">Share on Facebook</a></li>
+                              <li><a href="#">Copy URL</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                          <small class="text-muted pull-right">9:23 AM</small>
+                        </div>
+                      </div>
+                      <a href="http://github.com/kyleledbetter" class="list-group-item-heading">github.com/kyleledbetter</a>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/george_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <div class="btn-toolbar pull-right">
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Download">
+                            <span aria-hidden="true" class="icon-download-alt"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Open in Finder">
+                            <span aria-hidden="true" class="icon-folder-open"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Preview">
+                            <span aria-hidden="true" class="icon-zoom-in"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini dropdown-toggle" data-toggle="dropdown" title="Share">
+                            <span aria-hidden="true" class="icon-share"></span>
+                          </a>
+                          <ul class="dropdown-menu pull-right text-small">
+                              <li><a href="#">Email</a></li>
+                              <li><a href="#">Share on Twitter</a></li>
+                              <li><a href="#">Share on Facebook</a></li>
+                              <li><a href="#">Copy URL</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                          <small class="text-muted pull-right">11:13 AM</small>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item-heading">sweathutforvps.com</a>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/barry_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <div class="btn-toolbar pull-right">
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Download">
+                            <span aria-hidden="true" class="icon-download-alt"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Open in Finder">
+                            <span aria-hidden="true" class="icon-folder-open"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Preview">
+                            <span aria-hidden="true" class="icon-zoom-in"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini dropdown-toggle" data-toggle="dropdown" title="Share">
+                            <span aria-hidden="true" class="icon-share"></span>
+                          </a>
+                          <ul class="dropdown-menu pull-right text-small">
+                              <li><a href="#">Email</a></li>
+                              <li><a href="#">Share on Twitter</a></li>
+                              <li><a href="#">Share on Facebook</a></li>
+                              <li><a href="#">Copy URL</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                          <small class="text-muted pull-right">8:31 PM</small>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item-heading">barryzuckerhornlaw.com</a>
+                    </div>
+                  </div>
+                  <div class="list-group-item text-muted text-center">
+                    May 12, 2013
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/buster_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <div class="btn-toolbar pull-right">
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Download">
+                            <span aria-hidden="true" class="icon-download-alt"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Open in Finder">
+                            <span aria-hidden="true" class="icon-folder-open"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Preview">
+                            <span aria-hidden="true" class="icon-zoom-in"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini dropdown-toggle" data-toggle="dropdown" title="Share">
+                            <span aria-hidden="true" class="icon-share"></span>
+                          </a>
+                          <ul class="dropdown-menu pull-right text-small">
+                              <li><a href="#">Email</a></li>
+                              <li><a href="#">Share on Twitter</a></li>
+                              <li><a href="#">Share on Facebook</a></li>
+                              <li><a href="#">Copy URL</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                          <small class="text-muted pull-right">10:12 AM</small>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item-heading">prostheticsrus.com</a>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/lucille_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <div class="btn-toolbar pull-right">
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Download">
+                            <span aria-hidden="true" class="icon-download-alt"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Open in Finder">
+                            <span aria-hidden="true" class="icon-folder-open"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Preview">
+                            <span aria-hidden="true" class="icon-zoom-in"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini dropdown-toggle" data-toggle="dropdown" title="Share">
+                            <span aria-hidden="true" class="icon-share"></span>
+                          </a>
+                          <ul class="dropdown-menu pull-right text-small">
+                              <li><a href="#">Email</a></li>
+                              <li><a href="#">Share on Twitter</a></li>
+                              <li><a href="#">Share on Facebook</a></li>
+                              <li><a href="#">Copy URL</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                          <small class="text-muted pull-right">12:22 PM</small>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item-heading">1800vodkatogo.com</a>
+                    </div>
+                  </div>
+                  <div class="list-group-item text-muted text-center">
+                    May 13, 2013
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/barry_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <div class="btn-toolbar pull-right">
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Download">
+                            <span aria-hidden="true" class="icon-download-alt"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Open in Finder">
+                            <span aria-hidden="true" class="icon-folder-open"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Preview">
+                            <span aria-hidden="true" class="icon-zoom-in"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini dropdown-toggle" data-toggle="dropdown" title="Share">
+                            <span aria-hidden="true" class="icon-share"></span>
+                          </a>
+                          <ul class="dropdown-menu pull-right text-small">
+                              <li><a href="#">Email</a></li>
+                              <li><a href="#">Share on Twitter</a></li>
+                              <li><a href="#">Share on Facebook</a></li>
+                              <li><a href="#">Copy URL</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                          <small class="text-muted pull-right">4:45 PM</small>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item-heading">bobloblawsblog.com</a>
+                    </div>
+                  </div>
+                  <div class="list-group-item text-muted text-center">
+                    May 14, 2013
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/george-michael_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <div class="btn-toolbar pull-right">
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Download">
+                            <span aria-hidden="true" class="icon-download-alt"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Open in Finder">
+                            <span aria-hidden="true" class="icon-folder-open"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Preview">
+                            <span aria-hidden="true" class="icon-zoom-in"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini dropdown-toggle" data-toggle="dropdown" title="Share">
+                            <span aria-hidden="true" class="icon-share"></span>
+                          </a>
+                          <ul class="dropdown-menu pull-right text-small">
+                              <li><a href="#">Email</a></li>
+                              <li><a href="#">Share on Twitter</a></li>
+                              <li><a href="#">Share on Facebook</a></li>
+                              <li><a href="#">Copy URL</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                          <small class="text-muted pull-right">6:23 PM</small>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item-heading">imagineentertainment.net</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ui-toolbar ui-toolbar-bottom clearfix">
+                <p class="text-small text-muted pull-right">Skype supports <a data-toggle="modal" href="#modal-emoticons">emoticons</a> &amp; <a data-toggle="modal" href="#modal-markdown">markdown</a></p>
+                <a href="#" class="btn btn-mini btn-default">Preview</a>
+                <textarea></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center text-small text-muted">
+      Unofficial Skype concept by Kyle Ledbetter: <a href="http://dribbble.com/kyleledbetter" class="btn btn-default btn-mini"><span aria-hidden="true" class="icon-dribbble"></span></a> <a href="http://twitter.com/kyleledbetter" class="btn btn-default btn-mini"><span aria-hidden="true" class="icon-twitter"></span></a> <a href="http://github.com/kyleledbetter" class="btn btn-default btn-mini"><span aria-hidden="true" class="icon-github"></span></a>
+    </p>
+    <script src="assets/js/jquery.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/application.js"></script>
+    <!-- Emoticons Modal -->
+      <div class="modal fade" id="modal-emoticons">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title">Emoticons</h4>
+            </div>
+            <div class="modal-body">
+              body
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>

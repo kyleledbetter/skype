@@ -71,22 +71,72 @@
             <div class="col-9 ui-mainbody">
               <div class="ui-toolbar ui-toolbar-top clearfix">
                 <div class="btn-toolbar pull-left">
-                  <div class="btn-group">
-                    <a href="#" class="btn btn-round btn-default btn-small has-tooltip" data-toggle="tooltip" title="Share Screen"><span aria-hidden="true" class="icon-laptop"></span></a>
-                  </div>
-                  <div class="btn-group">
-                    <a href="#" class="btn btn-round btn-default btn-small has-tooltip" data-toggle="tooltip" title="Share File"><span aria-hidden="true" class="icon-cloud-upload"></span></a>
-                  </div>
-                  <div class="btn-group">
-                    <a href="#" class="btn btn-round btn-default btn-small has-tooltip" data-toggle="tooltip" title="Share Contact"><span aria-hidden="true" class="icon-user"></span></a>
+                  <div class="btn-group" data-toggle="buttons-radio">
+                    <label class="btn btn-default btn-small active has-tooltip" title="List View">
+                      <input type="radio" name="options" id="option1"> <span aria-hidden="true" class="icon-th-list"></span>
+                    </label>
+                    <label class="btn btn-default btn-small has-tooltip" title="Grid View">
+                      <input type="radio" name="options" id="option2"> <span aria-hidden="true" class="icon-th"></span>
+                    </label>
                   </div>
                 </div>
                 <div class="btn-toolbar pull-right">
                   <div class="btn-group">
-                    <a href="#collapse-video" data-toggle="collapse" class="btn btn-round btn-success btn-small has-tooltip" data-toggle="tooltip" title="Video Call"><span aria-hidden="true" class="icon-facetime-video"></span></a>
+                    <button type="button" class="btn btn-default btn-small dropdown-toggle" data-toggle="dropdown">
+                        Contact <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu text-small">
+                        <li><a href="#">Barry Zuckerhorn</a></li>
+                        <li><a href="#">Buster Bluth</a></li>
+                        <li><a href="#">George-Michael</a></li>
+                        <li><a href="#">George Bluth Sr.</a></li>
+                        <li><a href="#">Gob Bluth</a></li>
+                        <li><a href="#">Lindsay Bluth</a></li>
+                        <li><a href="#">Lucille Bluth</a></li>
+                        <li><a href="#">Maeby Fünke</a></li>
+                        <li><a href="#">Tobias Fünke</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">All Contacts</a></li>
+                      </ul>
                   </div>
                   <div class="btn-group">
-                    <a href="#collapse-call" data-toggle="collapse" class="btn btn-round btn-success btn-small has-tooltip" data-toggle="tooltip" title="Voice Call"><span aria-hidden="true" class="icon-phone"></span></a>
+                    <button type="button" class="btn btn-default btn-small dropdown-toggle" data-toggle="dropdown">
+                        Room <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu text-small">
+                        <li><a href="#">The &quot;Family&quot;</a></li>
+                        <li><a href="#">Gob &amp; Franklink</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">All Rooms</a></li>
+                      </ul>
+                  </div>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-small dropdown-toggle" data-toggle="dropdown">
+                        File Type <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu pull-right text-small">
+                        <li><a href="#">docx</a></li>
+                        <li><a href="#">jpg</a></li>
+                        <li><a href="#">mov</a></li>
+                        <li><a href="#">pdf</a></li>
+                        <li><a href="#">txt</a></li>
+                        <li><a href="#">xls</a></li>
+                        <li><a href="#">xlsx</a></li>
+                        <li><a href="#">zip</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">All Types</a></li>
+                      </ul>
+                  </div>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-small dropdown-toggle" data-toggle="dropdown">
+                        Order <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu pull-right text-small">
+                        <li><a href="#">Date</a></li>
+                        <li><a href="#">File Name</a></li>
+                        <li><a href="#">File Type</a></li>
+                        <li><a href="#">User</a></li>
+                      </ul>
                   </div>
                 </div>
               </div>
@@ -133,7 +183,48 @@
                           <small class="text-muted pull-right">3:15 PM</small>
                         </div>
                       </div>
-                      <a href="#" class="list-group-item-heading">filename.jpg</a>
+                      <a href="#" class="list-group-item-heading">Imagine-Entertainment-Hires.xlsx</a>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    <div class="list-group-object">
+                      <img src="assets/images/michael_128.jpg"/>
+                    </div>
+                    <div class="list-group-body">
+                      <div class="btn-toolbar pull-right">
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Download">
+                            <span aria-hidden="true" class="icon-download-alt"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Open in Finder">
+                            <span aria-hidden="true" class="icon-folder-open"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini" title="Preview">
+                            <span aria-hidden="true" class="icon-zoom-in"></span>
+                          </a>
+                        </div>
+                        <div class="btn-group reveal">
+                          <a href="#" class="btn btn-default btn-mini dropdown-toggle" data-toggle="dropdown" title="Share">
+                            <span aria-hidden="true" class="icon-share"></span>
+                          </a>
+                          <ul class="dropdown-menu pull-right text-small">
+                              <li><a href="#">Email</a></li>
+                              <li><a href="#">Share on Twitter</a></li>
+                              <li><a href="#">Share on Facebook</a></li>
+                              <li><a href="#">Upload to Dropbox</a></li>
+                              <li><a href="#">Upload to Google Drive</a></li>
+                              <li><a href="#">Upload to SkyDrive</a></li>
+                            </ul>
+                        </div>
+                        <div class="btn-group">
+                          <small class="text-muted pull-right">4:32 PM</small>
+                        </div>
+                      </div>
+                      <a href="#" class="list-group-item-heading">sudden-valley-problems.docx</a>
                     </div>
                   </div>
                   <div class="list-group-item">
@@ -171,51 +262,10 @@
                             </ul>
                         </div>
                         <div class="btn-group">
-                          <small class="text-muted pull-right">3:15 PM</small>
+                          <small class="text-muted pull-right">10:29 PM</small>
                         </div>
                       </div>
-                      <a href="#" class="list-group-item-heading">filename.jpg</a>
-                    </div>
-                  </div>
-                  <div class="list-group-item">
-                    <div class="list-group-object">
-                      <img src="assets/images/maybe_128.jpg"/>
-                    </div>
-                    <div class="list-group-body">
-                      <div class="btn-toolbar pull-right">
-                        <div class="btn-group reveal">
-                          <a href="#" class="btn btn-default btn-mini" title="Download">
-                            <span aria-hidden="true" class="icon-download-alt"></span>
-                          </a>
-                        </div>
-                        <div class="btn-group reveal">
-                          <a href="#" class="btn btn-default btn-mini" title="Open in Finder">
-                            <span aria-hidden="true" class="icon-folder-open"></span>
-                          </a>
-                        </div>
-                        <div class="btn-group reveal">
-                          <a href="#" class="btn btn-default btn-mini" title="Preview">
-                            <span aria-hidden="true" class="icon-zoom-in"></span>
-                          </a>
-                        </div>
-                        <div class="btn-group reveal">
-                          <a href="#" class="btn btn-default btn-mini dropdown-toggle" data-toggle="dropdown" title="Share">
-                            <span aria-hidden="true" class="icon-share"></span>
-                          </a>
-                          <ul class="dropdown-menu pull-right text-small">
-                              <li><a href="#">Email</a></li>
-                              <li><a href="#">Share on Twitter</a></li>
-                              <li><a href="#">Share on Facebook</a></li>
-                              <li><a href="#">Upload to Dropbox</a></li>
-                              <li><a href="#">Upload to Google Drive</a></li>
-                              <li><a href="#">Upload to SkyDrive</a></li>
-                            </ul>
-                        </div>
-                        <div class="btn-group">
-                          <small class="text-muted pull-right">3:15 PM</small>
-                        </div>
-                      </div>
-                      <a href="#" class="list-group-item-heading">filename.jpg</a>
+                      <a href="#" class="list-group-item-heading">Steve_Holt_pic.jpg</a>
                     </div>
                   </div>
                   <div class="list-group-item text-muted text-center">
@@ -223,7 +273,7 @@
                   </div>
                   <div class="list-group-item">
                     <div class="list-group-object">
-                      <img src="assets/images/maybe_128.jpg"/>
+                      <img src="assets/images/gob_128.jpg"/>
                     </div>
                     <div class="list-group-body">
                       <div class="btn-toolbar pull-right">
@@ -256,15 +306,15 @@
                             </ul>
                         </div>
                         <div class="btn-group">
-                          <small class="text-muted pull-right">3:15 PM</small>
+                          <small class="text-muted pull-right">9:23 AM</small>
                         </div>
                       </div>
-                      <a href="#" class="list-group-item-heading">filename.jpg</a>
+                      <a href="#" class="list-group-item-heading">Franklin-Sings-The-Hits.mov</a>
                     </div>
                   </div>
                   <div class="list-group-item">
                     <div class="list-group-object">
-                      <img src="assets/images/maybe_128.jpg"/>
+                      <img src="assets/images/george_128.jpg"/>
                     </div>
                     <div class="list-group-body">
                       <div class="btn-toolbar pull-right">
@@ -297,15 +347,15 @@
                             </ul>
                         </div>
                         <div class="btn-group">
-                          <small class="text-muted pull-right">3:15 PM</small>
+                          <small class="text-muted pull-right">11:13 AM</small>
                         </div>
                       </div>
-                      <a href="#" class="list-group-item-heading">filename.jpg</a>
+                      <a href="#" class="list-group-item-heading">Sweat Hut.pdf</a>
                     </div>
                   </div>
                   <div class="list-group-item">
                     <div class="list-group-object">
-                      <img src="assets/images/maybe_128.jpg"/>
+                      <img src="assets/images/barry_128.jpg"/>
                     </div>
                     <div class="list-group-body">
                       <div class="btn-toolbar pull-right">
@@ -338,10 +388,10 @@
                             </ul>
                         </div>
                         <div class="btn-group">
-                          <small class="text-muted pull-right">3:15 PM</small>
+                          <small class="text-muted pull-right">8:31 PM</small>
                         </div>
                       </div>
-                      <a href="#" class="list-group-item-heading">filename.jpg</a>
+                      <a href="#" class="list-group-item-heading">barrys-courtroom-tips.txt</a>
                     </div>
                   </div>
                   <div class="list-group-item text-muted text-center">
@@ -349,7 +399,7 @@
                   </div>
                   <div class="list-group-item">
                     <div class="list-group-object">
-                      <img src="assets/images/maybe_128.jpg"/>
+                      <img src="assets/images/buster_128.jpg"/>
                     </div>
                     <div class="list-group-body">
                       <div class="btn-toolbar pull-right">
@@ -382,15 +432,15 @@
                             </ul>
                         </div>
                         <div class="btn-group">
-                          <small class="text-muted pull-right">3:15 PM</small>
+                          <small class="text-muted pull-right">10:12 AM</small>
                         </div>
                       </div>
-                      <a href="#" class="list-group-item-heading">filename.jpg</a>
+                      <a href="#" class="list-group-item-heading">MommyArchive.zip</a>
                     </div>
                   </div>
                   <div class="list-group-item">
                     <div class="list-group-object">
-                      <img src="assets/images/maybe_128.jpg"/>
+                      <img src="assets/images/lucille_128.jpg"/>
                     </div>
                     <div class="list-group-body">
                       <div class="btn-toolbar pull-right">
@@ -423,10 +473,10 @@
                             </ul>
                         </div>
                         <div class="btn-group">
-                          <small class="text-muted pull-right">3:15 PM</small>
+                          <small class="text-muted pull-right">12:22 PM</small>
                         </div>
                       </div>
-                      <a href="#" class="list-group-item-heading">filename.jpg</a>
+                      <a href="#" class="list-group-item-heading">hospital-bar-ideas.xls</a>
                     </div>
                   </div>
                   <div class="list-group-item text-muted text-center">
@@ -434,7 +484,7 @@
                   </div>
                   <div class="list-group-item">
                     <div class="list-group-object">
-                      <img src="assets/images/maybe_128.jpg"/>
+                      <img src="assets/images/barry_128.jpg"/>
                     </div>
                     <div class="list-group-body">
                       <div class="btn-toolbar pull-right">
@@ -467,10 +517,10 @@
                             </ul>
                         </div>
                         <div class="btn-group">
-                          <small class="text-muted pull-right">3:15 PM</small>
+                          <small class="text-muted pull-right">4:45 PM</small>
                         </div>
                       </div>
-                      <a href="#" class="list-group-item-heading">filename.jpg</a>
+                      <a href="#" class="list-group-item-heading">Lost_Case_files.pdf</a>
                     </div>
                   </div>
                   <div class="list-group-item text-muted text-center">
@@ -478,7 +528,7 @@
                   </div>
                   <div class="list-group-item">
                     <div class="list-group-object">
-                      <img src="assets/images/maybe_128.jpg"/>
+                      <img src="assets/images/george-michael_128.jpg"/>
                     </div>
                     <div class="list-group-body">
                       <div class="btn-toolbar pull-right">
@@ -511,18 +561,20 @@
                             </ul>
                         </div>
                         <div class="btn-group">
-                          <small class="text-muted pull-right">3:15 PM</small>
+                          <small class="text-muted pull-right">6:23 PM</small>
                         </div>
                       </div>
-                      <a href="#" class="list-group-item-heading">filename.jpg</a>
+                      <a href="#" class="list-group-item-heading">MaybeMaeby.jpg</a>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="ui-toolbar ui-toolbar-bottom clearfix">
-                <p class="text-small text-muted pull-right">Skype supports <a data-toggle="modal" href="#modal-emoticons">emoticons</a> &amp; <a data-toggle="modal" href="#modal-markdown">markdown</a></p>
-                <a href="#" class="btn btn-mini btn-default">Preview</a>
-                <textarea></textarea>
+                <p class="text-small text-muted pull-right">Supported <a data-toggle="modal" href="#modal-types">file types</a></p>
+                <a href="#" class="btn btn-mini btn-default">Upload</a>
+                <div class="well well-upload text-muted text-center">
+                  Drop File To Upload <span aria-hidden="true" class="icon-upload"></span>
+                </div>
               </div>
             </div>
           </div>
